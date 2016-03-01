@@ -1,7 +1,52 @@
-svg{
-	g{
-		text{
-			font: 10px 'sans-serif';
-		}
-	}
+body{
+	background: rgba(30,0,0,1);
+	overflow: hidden;
+}
+
+.info{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 400px;
+	height: 500px;
+	pointer-events: none;
+	font-family: Helvetica;
+	text-align: center;
+}
+
+.info h2{
+	font-weight: bold;
+	color: rgba(241,255,98,1);
+	text-transform: uppercase;
+	transform: scaleY(2);
+	letter-spacing: 10px;
+}
+
+.info h3{
+	transform: scaleX(1.5);
+	margin-bottom: 10px;
+}
+
+.info p{
+	color: rgba(241,255,98,1);
+	line-height: 1.5;
+	font-family: 'Times New Roman';
+	letter-spacing: 5px;
+}
+
+.info .info-spotlight{
+	font-weight: bold;
+	color: rgba(241,255,98,1);
+}
+
+svg g text{
+	font: 10px 'sans-serif';
+}
+
+svg .link{
+	stroke: pink;
+}
+
+svg image{
+	cursor: pointer;
 }

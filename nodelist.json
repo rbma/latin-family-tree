@@ -2,11 +2,219 @@
 	{
 		"id": "Tito Rodriguez",
 		"influence": 8,
-		"image": "tito-rodriguez"
+		"image": "tito-rodriguez",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
 	},
 	{
 		"id": "Machito",
 		"influence": 8,
-		"image": "machito"
+		"image": "machito",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Tito Puente",
+		"influence": 8,
+		"image": "tito-puente",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Johnny Pacheco",
+		"influence": 6,
+		"image": "johnny-pacheco",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Eddie Palmieri",
+		"influence": 6,
+		"image": "eddie-palmieri",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Joe Bataan",
+		"influence": 6,
+		"image": "joe-bataan",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Joey Pastrana",
+		"influence": 6,
+		"image": "joey-pastrana",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Mongo Santamaria",
+		"influence": 6,
+		"image": "mongo-santamaria",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+	},
+	{
+		"id": "Cal Tjader",
+		"influence": 5,
+		"image": "cal-tjader",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Joe Cuba",
+		"influence": 4,
+		"image": "joe-cuba",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Ray Barretto",
+		"influence": 4,
+		"image": "ray-barretto",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Charlie Palmieri",
+		"influence": 3,
+		"image": "charlie-palmieri",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Richie Ray",
+		"influence": 2,
+		"image": "richie-ray",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Harvey Averne",
+		"influence": 3,
+		"image": "harvey-averne",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Bobby Cruz",
+		"influence": 3,
+		"image": "bobby-cruz",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Larry Harlow",
+		"influence": 3,
+		"image": "larry-harlow",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Fania All-Stars",
+		"influence": 3,
+		"image": "fania",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Willie Colon",
+		"influence": 3,
+		"image": "willie-colon",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Hector Lavoe",
+		"influence": 2,
+		"image": "hector-lavoe",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Ruben Blades",
+		"influence": 3,
+		"image": "ruben-blades",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Louie Ramirez",
+		"influence": 2,
+		"image": "louie-ramirez",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "La Lupe",
+		"influence": 3,
+		"image": "la-lupe",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Willie Bobo",
+		"influence": 3,
+		"image": "willie-bobo",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Pucho",
+		"influence": 3,
+		"image": "pucho",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Johnny Colón",
+		"influence": 3,
+		"image": "johnny-colon",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Lebron Brothers",
+		"influence": 3,
+		"image": "lebron-brothers",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "TNT Boys",
+		"influence": 3,
+		"image": "tnt-boys",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Jimmy Sabater",
+		"influence": 3,
+		"image": "jimmy-sabater",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Pete Rodriguez",
+		"influence": 2,
+		"image": "pete-rodriguez",
+		"audio": "river.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+	},
+	{
+		"id": "Tony Pabon",
+		"influence": 3,
+		"image": "tony-pabon",
+		"audio": "cheese.mp3",
+		"bio": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
 	}
 ]
+
+
+
+
+
+
+

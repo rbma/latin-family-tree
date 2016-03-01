@@ -1,7 +1,20 @@
 'use strict';
 
-
+// ------------------------------------------------
+// How big are dem circles?
+//
 var influenceFactor = 6;
+
+// ------------------------------------------------
+// Cache some nodes
+//
+var infoName = d3.select('#info-name');
+var infoBio = d3.select('#info-bio');
+var audio = document.getElementById('audio');
+var mp3 = document.getElementById('mp3');
+
+var colors = ['#fd9467', '#72c0f0', '#ee81aa', '#97c16d', '#fcfa83', '#7ec7da', '#fd9467', '#72c0f0', '#ee81aa', '#97c16d', '#fcfa83', '#7ec7da', '#fd9467', '#72c0f0', '#ee81aa', '#97c16d', '#fcfa83', '#7ec7da', '#fd9467', '#72c0f0', '#ee81aa', '#97c16d', '#fcfa83', '#7ec7da', '#fd9467', '#72c0f0', '#ee81aa', '#97c16d', '#fcfa83', '#7ec7da'];
+
 
 
 // -------------------------------------------------
@@ -53,7 +66,6 @@ function createForceLayout(nodes, edges){
 		.enter()
 		.append('line')
 		.attr('class', 'link')
-		.style('stroke', 'black')
 		.style('opacity', 0.5)
 		.style('stroke-width', function(d){
 			return d.weight;
@@ -65,6 +77,39 @@ function createForceLayout(nodes, edges){
 		d3.fixed = true;
 	}
 
+	function highlightNode(d, i){
+		d3.select(this).attr('class', 'node active');
+		var text = d.id;
+		var coloredText = '';
+
+		for (var i = 0; i < text.length; i++ ){
+			var span = '<span style="color:' + colors[i] + ';">' + text[i] + '</span>';
+			coloredText = coloredText + span;
+		}
+		infoName.html(coloredText);
+		infoBio.text(d.bio);
+		this.parentElement.appendChild(this);
+	}
+
+	function unHighlightNode(){
+		d3.select(this).attr('class', 'node');
+		infoName.text('');
+		infoBio.text('');
+	}
+
+	function startAudio(d, i){
+		console.log(d);
+		mp3.src = 'audio/' + d.audio;
+		audio.load();
+		audio.play();
+	}
+
+	function stopAudio(){
+		audio.pause();
+		audio.currentTime = 0;
+		unHighlightNode();
+	}
+
 	var nodeEnter = d3.select('svg')
 		.selectAll('g.node')
 		.data(nodes, function(d){
@@ -74,23 +119,26 @@ function createForceLayout(nodes, edges){
 		.append('g')
 		.attr('class', 'node')
 		.call(force.drag())
-		.on('click', fixNode);
+		.on('click', fixNode)
+		.on('mouseover', highlightNode)
+		.on('mousedown', startAudio)
+		.on('mouseup', stopAudio)
+		.on('mouseout', unHighlightNode);
 
 
 	nodeEnter.append('circle')
 		.attr('r', function(d){
-			console.log(d);
 			return parseInt(d.influence * influenceFactor);
 		})
 		.style('fill', 'rgba(255,0,255,1');
 
-	nodeEnter.append('text')
-		.style('text-anchor', 'middle')
-		.style('font', '10px sans-serif')
-		.attr('y', 25)
-		.text(function(d){
-			return d.id;
-		});
+	// nodeEnter.append('text')
+	// 	.style('text-anchor', 'middle')
+	// 	.style('font', '10px sans-serif')
+	// 	.attr('y', 25)
+	// 	.text(function(d){
+	// 		return d.id;
+	// 	});
 
 	nodeEnter.append('image')
 		.attr('xlink:href', function(d){
@@ -107,6 +155,33 @@ function createForceLayout(nodes, edges){
 		})
 		.attr('height', function(d){
 			return (d.influence * influenceFactor) * 2 + 'px';
+		})
+		.on('mouseenter', function(d){
+
+			d3.select(this)
+				.transition()
+				.duration(500)
+				.attr('width', '250px')
+				.attr('height', '250px')
+				.attr('x', '-125px')
+				.attr('y', '-125px');
+		})
+		.on('mouseout', function(d){
+			d3.select(this)
+				.transition()
+				.duration(500)
+				.attr('x', function(d){
+					return -(d.influence * influenceFactor) + 'px';
+				})
+				.attr('y', function(d){
+					return -(d.influence * influenceFactor) + 'px';
+				})
+				.attr('width', function(d){
+					return (d.influence * influenceFactor) * 2 + 'px';
+				})
+				.attr('height', function(d){
+					return (d.influence * influenceFactor) * 2 + 'px';
+				})
 		});
 
 
@@ -148,7 +223,7 @@ function createForceLayout(nodes, edges){
 // -------------------------------------------------
 
 queue()
-	.defer(d3.csv, 'nodelist.csv')
+	.defer(d3.json, 'nodelist.json')
 	.defer(d3.csv, 'edgelist.csv')
 	.await(function(err, file1, file2){
 		createForceLayout(file1, file2);
